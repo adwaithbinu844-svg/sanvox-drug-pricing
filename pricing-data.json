@@ -1,0 +1,255 @@
+{
+  "version": "1.0",
+  "description": "Drug Pricing Comparator - Compare prices across Indian and US pharmacies",
+  "last_updated": "2026-06-06",
+  
+  "indian_pharmacies": [
+    {"name": "PharmEasy", "url": "https://pharmeasy.in", "icon": "🏪", "price_multiplier": 1.0},
+    {"name": "Apollo Pharmacy", "url": "https://www.apollopharmacy.in", "icon": "🏥", "price_multiplier": 1.05},
+    {"name": "MedPlus", "url": "https://www.medplusmart.com", "icon": "💊", "price_multiplier": 0.98},
+    {"name": "Wellness Forever", "url": "https://www.wellnessforever.com", "icon": "🌿", "price_multiplier": 1.02},
+    {"name": "Netmeds", "url": "https://www.netmeds.com", "icon": "📦", "price_multiplier": 1.03}
+  ],
+  
+  "us_pharmacies": [
+    {"name": "GoodRx", "url": "https://www.goodrx.com", "icon": "💰", "type": "coupon"},
+    {"name": "Cost Plus Drugs", "url": "https://costplusdrugs.com", "icon": "🏭", "type": "direct"},
+    {"name": "CVS", "url": "https://www.cvs.com", "icon": "🏪", "type": "retail"},
+    {"name": "Walgreens", "url": "https://www.walgreens.com", "icon": "🏪", "type": "retail"}
+  ],
+  
+  "drugs": [
+    {
+      "id": 1,
+      "name": "Metformin",
+      "strength": "500mg",
+      "quantity": "30 tablets",
+      "indian_prices": {
+        "PharmEasy": 45,
+        "Apollo Pharmacy": 48,
+        "MedPlus": 44,
+        "Wellness Forever": 46,
+        "Netmeds": 47
+      },
+      "us_prices": {
+        "GoodRx": 4,
+        "Cost Plus Drugs": 3.60,
+        "CVS": 15,
+        "Walgreens": 18
+      },
+      "insurance_tier": "Tier 1",
+      "insurance_copay": 5,
+      "currency": "INR/USD"
+    },
+    {
+      "id": 2,
+      "name": "Atorvastatin",
+      "strength": "20mg",
+      "quantity": "30 tablets",
+      "indian_prices": {
+        "PharmEasy": 120,
+        "Apollo Pharmacy": 125,
+        "MedPlus": 118,
+        "Wellness Forever": 122,
+        "Netmeds": 121
+      },
+      "us_prices": {
+        "GoodRx": 8,
+        "Cost Plus Drugs": 6.30,
+        "CVS": 25,
+        "Walgreens": 28
+      },
+      "insurance_tier": "Tier 1",
+      "insurance_copay": 10,
+      "currency": "INR/USD"
+    },
+    {
+      "id": 3,
+      "name": "Lisinopril",
+      "strength": "10mg",
+      "quantity": "30 tablets",
+      "indian_prices": {
+        "PharmEasy": 35,
+        "Apollo Pharmacy": 38,
+        "MedPlus": 34,
+        "Wellness Forever": 36,
+        "Netmeds": 37
+      },
+      "us_prices": {
+        "GoodRx": 6,
+        "Cost Plus Drugs": 4.80,
+        "CVS": 12,
+        "Walgreens": 14
+      },
+      "insurance_tier": "Tier 1",
+      "insurance_copay": 8,
+      "currency": "INR/USD"
+    },
+    {
+      "id": 4,
+      "name": "Amoxicillin",
+      "strength": "500mg",
+      "quantity": "15 capsules",
+      "indian_prices": {
+        "PharmEasy": 85,
+        "Apollo Pharmacy": 90,
+        "MedPlus": 83,
+        "Wellness Forever": 87,
+        "Netmeds": 86
+      },
+      "us_prices": {
+        "GoodRx": 10,
+        "Cost Plus Drugs": 8.50,
+        "CVS": 20,
+        "Walgreens": 22
+      },
+      "insurance_tier": "Tier 2",
+      "insurance_copay": 15,
+      "currency": "INR/USD"
+    },
+    {
+      "id": 5,
+      "name": "Azithromycin",
+      "strength": "250mg",
+      "quantity": "6 tablets",
+      "indian_prices": {
+        "PharmEasy": 65,
+        "Apollo Pharmacy": 68,
+        "MedPlus": 63,
+        "Wellness Forever": 66,
+        "Netmeds": 67
+      },
+      "us_prices": {
+        "GoodRx": 12,
+        "Cost Plus Drugs": 10.20,
+        "CVS": 25,
+        "Walgreens": 28
+      },
+      "insurance_tier": "Tier 2",
+      "insurance_copay": 18,
+      "currency": "INR/USD"
+    },
+    {
+      "id": 6,
+      "name": "Levothyroxine",
+      "strength": "50mcg",
+      "quantity": "30 tablets",
+      "indian_prices": {
+        "PharmEasy": 40,
+        "Apollo Pharmacy": 42,
+        "MedPlus": 38,
+        "Wellness Forever": 41,
+        "Netmeds": 40
+      },
+      "us_prices": {
+        "GoodRx": 7,
+        "Cost Plus Drugs": 5.50,
+        "CVS": 14,
+        "Walgreens": 16
+      },
+      "insurance_tier": "Tier 1",
+      "insurance_copay": 9,
+      "currency": "INR/USD"
+    },
+    {
+      "id": 7,
+      "name": "Amlodipine",
+      "strength": "5mg",
+      "quantity": "30 tablets",
+      "indian_prices": {
+        "PharmEasy": 55,
+        "Apollo Pharmacy": 58,
+        "MedPlus": 53,
+        "Wellness Forever": 56,
+        "Netmeds": 57
+      },
+      "us_prices": {
+        "GoodRx": 9,
+        "Cost Plus Drugs": 7.80,
+        "CVS": 18,
+        "Walgreens": 20
+      },
+      "insurance_tier": "Tier 1",
+      "insurance_copay": 12,
+      "currency": "INR/USD"
+    },
+    {
+      "id": 8,
+      "name": "Losartan",
+      "strength": "50mg",
+      "quantity": "30 tablets",
+      "indian_prices": {
+        "PharmEasy": 95,
+        "Apollo Pharmacy": 100,
+        "MedPlus": 92,
+        "Wellness Forever": 97,
+        "Netmeds": 96
+      },
+      "us_prices": {
+        "GoodRx": 11,
+        "Cost Plus Drugs": 9.50,
+        "CVS": 22,
+        "Walgreens": 24
+      },
+      "insurance_tier": "Tier 1",
+      "insurance_copay": 14,
+      "currency": "INR/USD"
+    },
+    {
+      "id": 9,
+      "name": "Omeprazole",
+      "strength": "20mg",
+      "quantity": "30 capsules",
+      "indian_prices": {
+        "PharmEasy": 75,
+        "Apollo Pharmacy": 78,
+        "MedPlus": 73,
+        "Wellness Forever": 76,
+        "Netmeds": 77
+      },
+      "us_prices": {
+        "GoodRx": 13,
+        "Cost Plus Drugs": 11.50,
+        "CVS": 26,
+        "Walgreens": 30
+      },
+      "insurance_tier": "Tier 2",
+      "insurance_copay": 20,
+      "currency": "INR/USD"
+    },
+    {
+      "id": 10,
+      "name": "Gabapentin",
+      "strength": "300mg",
+      "quantity": "30 capsules",
+      "indian_prices": {
+        "PharmEasy": 150,
+        "Apollo Pharmacy": 155,
+        "MedPlus": 148,
+        "Wellness Forever": 152,
+        "Netmeds": 153
+      },
+      "us_prices": {
+        "GoodRx": 15,
+        "Cost Plus Drugs": 13.50,
+        "CVS": 30,
+        "Walgreens": 35
+      },
+      "insurance_tier": "Tier 2",
+      "insurance_copay": 22,
+      "currency": "INR/USD"
+    }
+  ],
+  
+  "currency_conversion": {
+    "usd_to_inr": 83.5,
+    "last_updated": "2026-06-06"
+  },
+  
+  "insurance_tiers": [
+    {"tier": "Tier 1", "description": "Generic preferred", "copay_range": "$5-15 / ₹400-1200"},
+    {"tier": "Tier 2", "description": "Brand preferred", "copay_range": "$15-30 / ₹1200-2500"},
+    {"tier": "Tier 3", "description": "Non-preferred brand", "copay_range": "$30-50 / ₹2500-4000"},
+    {"tier": "Tier 4", "description": "Specialty", "copay_range": "$50-100+ / ₹4000-8000+"}
+  ]
+}
